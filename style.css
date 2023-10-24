@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none ;
+}
+.team{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #D6D0CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.team-content{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.team-content img{
+    width: 100%;
+    height: auto; 
+    border-radius: 15px;
+    margin-bottom: 15px;
+} 
+.center h1{
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    text-align: center;
+}
+.box{
+    padding: 16px;
+    background: #DCB8B0;
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+.box h3{
+    font-size: 23px;
+    font-weight: 600;
+    color: #7b2222;
+    margin-bottom: 8px;
+}
+.box h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #c74444;
+    margin-bottom: 15px;
+    Letter-spacing: 2px;
+}
+.icons i{
+    display: inline-block;
+    color: #060309;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+.icons i:hover{
+    transform: scale(1.2);
+}
+.box:hover{
+    transform: translate(-10px);
+    cursor: pointer;
+}
+button {
+    margin-top: 10px;
+    width: 8em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff; */
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #A8BAC3 0%, #B0CCDF 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 9em;
+   }
